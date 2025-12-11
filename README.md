@@ -5,7 +5,7 @@ This project analyzes large-scale United States patent data to predict two outco
 - How long a patent takes to move from filing to grant (USPTO examination time).
 
 The work combines SQL-based preprocessing, feature engineering, and CatBoost machine learning models to create an end-to-end prediction pipeline.
-
+```
 Repository Structure
 patent_prediction/
 │
@@ -18,7 +18,9 @@ patent_prediction/
 │   └── time_to_issue_models.ipynb       # Time-to-issue regression + bucket models
 │
 ├── .gitignore                         # Virtual environment & system file exclusions
-└── README.md
+└── README.md```
+
+```
 
 Data Source
 
