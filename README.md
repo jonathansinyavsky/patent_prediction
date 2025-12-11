@@ -18,7 +18,7 @@ patent_prediction/
 │   └── time_to_issue_models.ipynb       # Time-to-issue regression + bucket models
 │
 ├── .gitignore                         # Virtual environment & system file exclusions
-└── README.md```
+└── README.md
 
 ```
 
