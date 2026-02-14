@@ -1,4 +1,4 @@
-#CS210 Final Project — Modeling Patent Impact and Examination Timelines
+# CS210 Final Project — Modeling Patent Impact and Examination Timelines
 
 This project analyzes large-scale United States patent data to predict two outcomes that matter in intellectual property strategy:
 - Whether a granted patent will become high-impact (measured by forward citations).
@@ -22,12 +22,12 @@ patent_prediction/
 
 ```
 
-Data Source
+## Data Source
 
 All datasets come from PatentsView, a public USPTO-backed resource containing millions of patent records.
 Raw TSV files (≈150M rows across tables) were imported into PostgreSQL for preprocessing.
 
-SQL Pipeline
+## SQL Pipeline
 
 The SQL scripts:
 - Create all required tables (schema.sql)
@@ -43,7 +43,7 @@ The SQL scripts:
 
 The final table contains >9M rows and ~34 engineered features per patent.
 
-Python Workflow
+## Python Workflow
 - The modeling workflow includes:
     - Chunked loading of the 9M-row dataset
     - Cleaning and validation
@@ -53,7 +53,7 @@ Python Workflow
         - Regression for exam timelines
         - 3- and 4-bucket timeline classification models
 
-Modeling Results
+## Modeling Results
 
 High-Impact Classifier
 - AUC: 0.791
@@ -71,12 +71,12 @@ Bucketed Timeline Models
 
 These models reveal meaningful structural patterns even though the USPTO timeline is highly variable.
 
-Limitations
+## Limitations
 - PatentsView includes only granted patents, so approval prediction is not possible.
 - Missing and inconsistent metadata required extensive cleaning.
 - Examination time depends on many unobserved factors (examiner workload, legal disputes, etc.).
 
-How to Reproduce
+## How to Reproduce
 1. Load PatentsView TSV files into PostgreSQL.
 2. Run schema.sql to create tables.
 3. Run feature_engineering_script.sql to generate ml_patent_base.
