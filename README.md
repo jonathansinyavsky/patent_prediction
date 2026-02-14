@@ -29,7 +29,7 @@ Raw TSV files (≈150M rows across tables) were imported into PostgreSQL for pre
 
 ## SQL Pipeline
 
-The SQL scripts:
+### The SQL scripts:
 - Create all required tables (schema.sql)
 - Construct a cleaned, feature-rich modeling table (ml_patent_base) containing:
     - inventor and assignee counts
@@ -55,17 +55,17 @@ The final table contains >9M rows and ~34 engineered features per patent.
 
 ## Modeling Results
 
-High-Impact Classifier
+### High-Impact Classifier
 - AUC: 0.791
 - Recall for high-impact patents: 87%
 - Key predictors: filing year, CPC section, WIPO kind, CPC breadth, claim count
 
-Time-to-Issue Regression
+### Time-to-Issue Regression
 - MAE: 313 days
 - RMSE: 405 days
 - R²: 0.34
 
-Bucketed Timeline Models
+### Bucketed Timeline Models
 - 4-bucket accuracy: 0.53
 - 3-bucket accuracy: 0.68
 
