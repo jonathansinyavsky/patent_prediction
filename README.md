@@ -1,4 +1,4 @@
-# CS210 Final Project — Modeling Patent Impact and Examination Timelines
+# Modeling Patent Impact and Examination Timelines (CS210)
 
 This project analyzes large-scale United States patent data to predict two outcomes that matter in intellectual property strategy:
 - Whether a granted patent will become high-impact (measured by forward citations).
